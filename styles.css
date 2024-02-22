@@ -96,3 +96,79 @@ nav {
     font-size: 16px;
     line-height: 27px;
 }
+
+.main-titles {
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.main-overtitle {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 10%;
+    line-height: 20px;
+    color: #738697;
+}
+
+.main-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 50px;
+    letter-spacing: -1%;
+    color: #142B35;
+    padding-top: 1vh;
+}
+
+.main-subtitle {
+    padding-top: 2vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+    max-width: 35%;
+    color: #5B6E76;
+}
+
+.main-cards {
+    padding-top: 5vh;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    text-align: center;
+  }
+  
+  .card {
+    min-height: 40vh;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgb(12 0 46 / 6%);
+    opacity: 1;
+    cursor: pointer;
+    padding: 5em 3em 2em;
+  }
+
+
+  .card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 3vh;
+    color: #142B35;
+  }
+
+
+  .card-text {
+    padding-top: 3vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5B6E76;
+  }
+
+  .card:hover .card-title {
+    color: #3A98B2;
+    transition: 0.2s;
+  }
