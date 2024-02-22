@@ -1,0 +1,98 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    font-family: "Work Sans", sans-serif;
+}
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a{
+  text-decoration: none;
+  color: #142B35;
+}
+
+.container {
+    padding: 0 100px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 2fr 6fr 3fr;
+    height: 10vh;
+    align-items: center;
+    font-weight: 400;
+    color: #142B35;
+}
+
+
+.logo {
+
+}
+
+
+.nav-elems {
+    margin: 0 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-slash {
+    color:#E0E0E0;
+    font-size: 34px;
+    font-weight: 200;
+}
+
+.nav-number {
+    min-width: 11vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-button {
+    background-color: #3A98B2;
+    width: 135px;
+    height: 50px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.header-main {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("./resources/header-background.jpeg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-titles {
+    padding-top: 45vh;
+    color: white;
+    max-width: 60%;
+}
+
+.header-title-container {
+    border-left: solid #F2B91D;
+}
+
+.header-title {
+    padding-left: 5vh;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.header-subtitle {
+    max-width: 70%;
+    padding-left: 5vh;
+    padding-top: 1vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+}
