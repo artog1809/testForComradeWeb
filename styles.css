@@ -303,3 +303,7 @@ nav {
     justify-content: flex-start;
     gap: 15px;
 }
+
+.map {
+    padding-top: 10vh;
+}
