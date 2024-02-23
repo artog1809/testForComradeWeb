@@ -129,6 +129,15 @@ nav {
     color: #5B6E76;
 }
 
+.main-text {
+    padding-top: 2vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 35%;
+    color: #5B6E76;
+}
+
 .main-cards {
     padding-top: 5vh;
 }
@@ -172,3 +181,88 @@ nav {
     color: #3A98B2;
     transition: 0.2s;
   }
+
+  .contact {
+    padding-top: 10vh;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact-feedback {
+    width: 30%;
+    min-height: 50vh;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgb(12 0 46 / 6%);
+    opacity: 1;
+    padding: 2em 3em;
+  }
+
+  .contact-feedback-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+  }
+
+  .contact-feedback-input {
+    border: 1px solid #E0E0E0;
+    height: 40px;
+    width: 100%;
+    margin-top: 0.5em;
+  }
+
+  .contact-feedback-textarea {
+    border: 1px solid #E0E0E0;
+    min-width: 100%;
+    height: 70px;
+    min-height: 70px;
+    max-height: 70px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0.5em;
+
+  }
+
+  .contact-feedback-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 50px;
+    letter-spacing: -1%;
+    color: #142B35;
+    text-align: center;
+  }
+
+
+  .contact-feedback-main {
+    padding-top: 2em;
+  }
+
+  .contact-feedback-label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #5B6E76;
+  }
+
+  .contact-feedback-elem {
+    padding-top: 1em;
+  }
+
+
+  .obligatory-field {
+    color: #F2B91D;
+  }
+
+
+  .contact-feedback-submit {
+    background-color: #F2B91D;
+    width: 135px;
+    height: 50px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 2em;
+}
