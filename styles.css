@@ -29,20 +29,12 @@ nav {
     color: #142B35;
 }
 
-
-.logo {}
-
-
 .nav-elems {
     margin: 0 5vh;
     display: flex;
     justify-content: space-between;
     gap: 2vw;
     min-width: 250px
-}
-
-.nav-elem {
-    
 }
 
 .nav-contacts {
@@ -148,6 +140,7 @@ nav {
 }
 
 .main-cards {
+    overflow: hidden;
     padding-top: 5vh;
 }
 
@@ -168,7 +161,6 @@ nav {
     padding: 5em 3em 2em;
 }
 
-
 .card-title {
     font-weight: 600;
     font-size: 18px;
@@ -176,7 +168,6 @@ nav {
     padding-top: 3vh;
     color: #142B35;
 }
-
 
 .card-text {
     padding-top: 3vh;
@@ -243,7 +234,6 @@ nav {
     color: #142B35;
     text-align: center;
 }
-
 
 .contact-feedback-main {
     padding-top: 2em;
@@ -347,6 +337,10 @@ nav {
     transition: 0.2s;
 }
 
+.blog-cards-wrapper {
+    overflow: hidden;
+}
+
 .blog-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -361,11 +355,12 @@ nav {
     box-shadow: 0 2px 4px 0 rgb(12 0 46 / 6%);
     opacity: 1;
     cursor: pointer;
+    max-width: 100%;
 }
 
 .blog-img {
     width: 100%;
-    min-width: 100%;   
+    min-width: 100%;
 }
 
 .blog-card-titles {
@@ -434,20 +429,20 @@ footer {
 }
 
 .burger-menu {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  inset: 0;
-  width: 100%;
-  background: #fff;
-  z-index: var(--z-drawer);
-  transform: translateX(-100%);
-  transition: transform 0.3s ease 0s;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    width: 100%;
+    background: #fff;
+    z-index: var(--z-drawer);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease 0s;
 }
 
 .show {
-  transform: translateX(0%);
+    transform: translateX(0%);
 }
 
 .btn {
@@ -460,7 +455,7 @@ footer {
     background: transparent;
     color: #142B35;
     cursor: pointer;
-  }
+}
 
 .burger-menu-header {
     display: flex;
@@ -477,25 +472,68 @@ footer {
     align-items: center;
 }
 
+.cards-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    display: none;
+}
+
+.card-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.card-indicator.active {
+    background-color: #F2B91D;
+}
+
+.blog-cards-indicators {
+    justify-content: center;
+    margin-top: 5vh;
+    display: none;
+}
+
+.blog-card-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.blog-card-indicator.active {
+    background-color: #F2B91D;
+}
+
 @media screen and (max-width: 1280px) {
-    .nav-contact-number{
+    .nav-contact-number {
         display: none;
     }
 
     .nav-number {
         min-width: 3vw
     }
-    
 }
 
 @media screen and (max-width: 1070px) {
-    .container{
+    .header-titles{
+        max-width: 70%;
+    }
+
+    .container {
         padding: 0 50px;
     }
+
     .nav-elems {
         display: none;
     }
-    
+
     .nav-slash {
         display: none;
     }
@@ -532,15 +570,14 @@ footer {
 
 @media screen and (min-width: 1071px) {
 
-    .btn-burger-menu{
+    .btn-burger-menu {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 768px) {
     .header-titles {
-        top: 30%;    
+        top: 30%;
     }
 
     .cards-container {
@@ -551,8 +588,73 @@ footer {
         text-align: center;
     }
 
+    .blog-cards {
+        display: flex;
+    }
+
+    .blog-card {
+        flex: 0 0 100%;
+    }
+
+    .blog-cards-indicators {
+        display: flex;
+    }
+
+    .blog-title-container {
+        flex-direction: column;
+    }
+
+    .blog-button {
+        padding-top: 3vh;
+    }
 }
 
-/* media for navbar down 1280 px 
+@media screen and (max-width:630px) {
+    .container {
+        padding: 0 20px;
+    }
 
-/* media for contact down 1150 px
+    .header-titles {
+        max-width: 90%;
+    }
+
+    .contact-feedback {
+        max-width: 400px;
+        width: 70%;
+    }
+
+    .main-cards {
+        overflow: hidden;
+    }
+
+    .cards-container {
+        display: flex;
+    }
+
+    .card {
+        flex: 0 0 95%;
+    }
+
+    .cards-indicators {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .header-titles {
+        top: 15%;
+    }
+
+    .footer-elems {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer-group {
+        flex-direction: column;
+    }
+
+    .header-title {
+        font-size: 32px;
+    }
+}
