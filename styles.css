@@ -198,7 +198,7 @@ nav {
     background: #fff;
     box-shadow: 0 2px 4px 0 rgb(12 0 46 / 6%);
     opacity: 1;
-    padding: 2em 3em;
+    padding: 3em 3em;
   }
 
   .contact-feedback-group{
@@ -256,8 +256,12 @@ nav {
     color: #F2B91D;
   }
 
+.contact-feedback-button {
+    display: flex;
+    justify-content: center;
+}
 
-  .contact-feedback-submit {
+.contact-feedback-submit {
     background-color: #F2B91D;
     width: 135px;
     height: 50px;
@@ -265,4 +269,37 @@ nav {
     color: #fff;
     font-size: 16px;
     margin-top: 2em;
+}
+
+.contact-feedback-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info-text {
+    padding-top: 2vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5B6E76;
+}
+
+.contact-info-adress {
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-adress-elem {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
 }
