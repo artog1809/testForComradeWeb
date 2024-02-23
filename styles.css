@@ -10,9 +10,7 @@ button {
 }
 
 a:active,
-/* активная/посещенная ссылка */
 a:hover,
-/* при наведении */
 a {
     text-decoration: none;
     color: #142B35;
@@ -23,8 +21,8 @@ a {
 }
 
 nav {
-    display: grid;
-    grid-template-columns: 2fr 6fr 3fr;
+    display: flex;
+    justify-content: space-between;
     height: 10vh;
     align-items: center;
     font-weight: 400;
@@ -36,9 +34,15 @@ nav {
 
 
 .nav-elems {
-    margin: 0 10vh;
+    margin: 0 5vh;
     display: flex;
     justify-content: space-between;
+    gap: 2vw;
+    min-width: 250px
+}
+
+.nav-elem {
+    
 }
 
 .nav-contacts {
@@ -76,7 +80,8 @@ nav {
 }
 
 .header-titles {
-    padding-top: 45vh;
+    position: absolute;
+    top: 40%;
     color: white;
     max-width: 60%;
 }
@@ -198,7 +203,7 @@ nav {
 
 .contact-feedback {
     width: 30%;
-    min-height: 50vh;
+    min-height: 40vh;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgb(12 0 46 / 6%);
     opacity: 1;
@@ -427,3 +432,127 @@ footer {
     line-height: 20px;
     color: #142B35;
 }
+
+.burger-menu {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  width: 100%;
+  background: #fff;
+  z-index: var(--z-drawer);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease 0s;
+}
+
+.show {
+  transform: translateX(0%);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    color: #142B35;
+    cursor: pointer;
+  }
+
+.burger-menu-header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 100%;
+}
+
+.burger-menu-header-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+    .nav-contact-number{
+        display: none;
+    }
+
+    .nav-number {
+        min-width: 3vw
+    }
+    
+}
+
+@media screen and (max-width: 1070px) {
+    .container{
+        padding: 0 50px;
+    }
+    .nav-elems {
+        display: none;
+    }
+    
+    .nav-slash {
+        display: none;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .nav-btns {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-feedback {
+        margin: 0 auto;
+        width: 400px;
+        margin-top: 2em;
+    }
+
+    .card {
+        padding: 1em;
+    }
+
+    .main-subtitle {
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 1071px) {
+
+    .btn-burger-menu{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .header-titles {
+        top: 30%;    
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        text-align: center;
+    }
+
+}
+
+/* media for navbar down 1280 px 
+
+/* media for contact down 1150 px
