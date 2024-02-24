@@ -429,6 +429,8 @@ footer {
 }
 
 .burger-menu {
+    overflow-y: hidden;
+    max-height: 100%;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -436,9 +438,19 @@ footer {
     inset: 0;
     width: 100%;
     background: #fff;
-    z-index: var(--z-drawer);
+    z-index: 1;
     transform: translateX(-100%);
     transition: transform 0.3s ease 0s;
+}
+
+.burger-feedback-button {
+    position: absolute;
+    bottom: 100px;
+    background-color: #3A98B2;
+    width: 135px;
+    height: 50px;
+    border-radius: 5px;
+    color: #fff;
 }
 
 .show {
@@ -463,13 +475,42 @@ footer {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    width: 100%;
+    width: 95%;
 }
 
 .burger-menu-header-btns {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+
+.burger-menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+
+.burger-menu-main {
+    width: 35em;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger-menu-elem {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.burger-menu-btn {
+    display: flex;
+    justify-content: center;
 }
 
 .cards-indicators {
@@ -511,6 +552,14 @@ footer {
     background-color: #F2B91D;
 }
 
+.unscroll {
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: auto;
+}
+
 @media screen and (max-width: 1280px) {
     .nav-contact-number {
         display: none;
@@ -522,7 +571,7 @@ footer {
 }
 
 @media screen and (max-width: 1070px) {
-    .header-titles{
+    .header-titles {
         max-width: 70%;
     }
 
@@ -638,11 +687,10 @@ footer {
     .cards-indicators {
         display: flex;
     }
-}
 
-@media screen and (max-width:400px) {
-    .header-titles {
-        top: 15%;
+    .burger-menu-main {
+        max-width: 300px;
+
     }
 
     .footer-elems {
@@ -654,6 +702,14 @@ footer {
         flex-direction: column;
     }
 
+}
+
+@media screen and (max-width:400px) {
+    .header-titles {
+        top: 15%;
+    }
+
+   
     .header-title {
         font-size: 32px;
     }

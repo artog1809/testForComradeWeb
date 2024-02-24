@@ -10,7 +10,6 @@ function initSlider(sliderLine, sliderDots, sliderImages, sliderWrapper, windowS
     containerWidth = document.querySelector('.container').offsetWidth;
     if (windowWidth < windowSize) {
       sliderWidth = sliderWrapper.offsetWidth;
-      console.log(sliderWidth)
       sliderImages.forEach(item => {
         item.style.width = sliderWidth + 'px';
         sliderLine.style.width = sliderWidth + 'px';
@@ -84,3 +83,14 @@ const btnCloseBurgerMenu = document.querySelector('.burger-menu .close');
 btnCloseBurgerMenu.addEventListener('click', () => {
   burgerMenu.classList.remove('show');
 });
+
+
+let html = document.querySelector("html")
+document.querySelector(".btn-burger-menu").onclick = function(){
+html.classList.toggle("unscroll")
+}
+
+document.querySelector(".close").onclick = function(){
+  html.classList.remove("unscroll")
+  html.classList.toggle("scroll")
+}
