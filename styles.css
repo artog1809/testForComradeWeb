@@ -65,7 +65,7 @@ nav {
 
 .header-main {
     height: 80vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./resources/header-background.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./resources/header-background.webp");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
