@@ -63,6 +63,12 @@ nav {
     color: #fff;
 }
 
+.header-nav {
+    position: sticky;
+    background-color: #fff;
+    top:0;
+    z-index: 1;
+}
 .header-main {
     height: 80vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./resources/header-background.webp");
