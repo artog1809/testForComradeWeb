@@ -665,8 +665,14 @@ footer {
 }
 
 @media screen and (max-width:630px) {
+
     .container {
-        padding: 0 20px;
+        padding:0 20px;
+    }
+
+    .container .card {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .header-titles {
@@ -687,7 +693,7 @@ footer {
     }
 
     .card {
-        flex: 0 0 95%;
+        flex: 0 0 100%;
     }
 
     .cards-indicators {

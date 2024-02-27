@@ -24,12 +24,7 @@ function initSlider(sliderLine, sliderDots, sliderImages, sliderWrapper, windowS
   }
 
   function rollSlider() {
-    if(sliderCount === 0) {
-      sliderLine.style.transform = `translateX(${-sliderCount * (sliderWidth + ((containerWidth - sliderWidth)/2))}px)`;
-    }
-    else {
-      sliderLine.style.transform = `translateX(${-sliderCount * (sliderWidth + ((containerWidth - sliderWidth)/2))}px)`
-    }
+    sliderLine.style.transform = `translate3d(-${sliderCount * sliderWidth + 16*sliderCount}px, 0px, 0px)`;
   }
 
   function thisSlide(index) {
